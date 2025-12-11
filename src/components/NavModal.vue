@@ -31,18 +31,18 @@ const handleClose = () => {
     :initial="{ translateY: -350 }"
     :animate="
       isClosing
-        ? { translateY: -350, transition: { duration: 0.5 } }
+        ? { translateY: -390, transition: { duration: 0.5 } }
         : { translateY: 0, transition: { duration: 0.5 } }
     "
     class="z-10 fixed top-20 left-[50%] -translate-x-[50%] h-auto w-3/4 bg-off-white/95 text-black p-5 rounded-md shadow-sm"
   >
-    <span @click="handleClose" class="text-sm absolute right-6 top-3"
+    <span @click="handleClose" class="text-sm md:text-lg absolute right-6 top-3"
       >close</span
     >
 
     <ul class="flex flex-col gap-4 mt-10 items-center">
       <li
-        class="uppercase font-semibold"
+        class="uppercase font-semibold md:text-lg list-none"
         v-for="(link, index) in links"
         :key="index"
       >

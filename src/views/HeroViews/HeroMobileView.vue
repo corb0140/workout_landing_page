@@ -47,24 +47,24 @@ const variants = {
 </script>
 
 <template>
-  <div class="h-auto px-2 py-8 flex flex-col items-center lg:hidden">
-    <div class="gap-4 flex flex-col max-w-90">
-      <h1 class="uppercase text-center">Workout with me</h1>
+  <div class="h-auto px-8 md:px-15 py-8 flex flex-col items-center lg:hidden">
+    <div class="gap-4 flex flex-col max-w-90 md:max-w-120">
+      <h1 class="uppercase text-center text-4xl">Workout with me</h1>
 
-      <p class="text-sm font-light text-off-white/40 text-center">
+      <p class="text-sm md:text-lg font-light text-off-white/40 text-center">
         A huge selection of health and fitness content, healthy recipes and
         transformation stories to help you get fit and stay fit!
       </p>
 
       <button
-        class="bg-orange rounded-md p-3 mt-4 text-sm self-center font-medium"
+        class="bg-orange rounded-md p-3 md:p-4 mt-4 text-sm self-center font-medium"
       >
         Join Club Now!
       </button>
     </div>
 
     <!-- HERO IMAGE & DATA -->
-    <div class="mt-15 h-100 w-full relative p-5">
+    <div class="mt-15 h-100 md:h-130 w-full relative p-5">
       <img
         src="../../assets/images/hero-image.png"
         alt="image of man tying laces"
@@ -78,9 +78,11 @@ const variants = {
         animate="show"
         @animationComplete="startCount(0)"
         :custom="0"
-        class="flex flex-col gap-1 py-2 px-6 rounded-xl bg-[#EF8964] absolute top-0 right-3 min-w-30"
+        class="flex flex-col gap-1 py-2 px-6 md:py-4 md:px-8 rounded-xl bg-[#EF8964] absolute top-0 right-3 md:right-30 min-w-30 md:min-w-40"
       >
-        <span class="h-6.5 w-6.5 rounded-full bg-off-white/40 p-1.5">
+        <span
+          class="h-6.5 w-6.5 md:h-7.5 md:w-7.5 rounded-full bg-off-white/40 p-1.5 md:p-2"
+        >
           <img
             src="../../assets//images//running-stick-figure.png"
             alt=""
@@ -89,7 +91,7 @@ const variants = {
         </span>
 
         <span class="font-bold flex gap-1">
-          <p class="text-xl">{{ kmCount }}</p>
+          <p class="text-xl md:text-2xl">{{ kmCount }}</p>
           <p class="text-sm self-end relative bottom-0.5">km</p>
         </span>
       </motion.div>
@@ -101,9 +103,9 @@ const variants = {
         animate="show"
         @animationComplete="startCount(1)"
         :custom="1"
-        class="absolute top-1/2 left-2 rounded-xl bg-gray py-3 pl-2 flex items-center gap-2 max-w-30"
+        class="absolute top-1/2 left-2 md:left-10 rounded-xl bg-gray py-3 md:py-7 pl-2 md:px-5 flex items-center gap-2 md:gap-4 max-w-30 md:max-w-55"
       >
-        <span class="w-5">
+        <span class="w-5 md:w-7">
           <img
             src="../../assets//images/play-button.png"
             alt=""
@@ -112,9 +114,9 @@ const variants = {
         </span>
 
         <span class="flex flex-col gap-1">
-          <p class="font-bold text-xl">{{ videoTutorialCount }}+</p>
+          <p class="font-bold text-xl md:text-2xl">{{ videoTutorialCount }}+</p>
 
-          <p class="text-sm opacity-70">Video Tutorial</p>
+          <p class="text-sm md:text-lg opacity-70">Video Tutorial</p>
         </span>
       </motion.div>
 
@@ -125,16 +127,18 @@ const variants = {
         animate="show"
         @animationComplete="startCount(2)"
         :custom="2"
-        class="absolute bottom-10 right-0 bg-[#7A29DC] pl-2 py-3 rounded-xl flex flex-col gap-2 max-w-30"
+        class="absolute bottom-10 right-0 md:right-10 bg-[#7A29DC] pl-2 md:px-5 py-3 md:py-7 rounded-xl flex flex-col gap-2 max-w-30 md:max-w-60"
       >
-        <p class="font-bold text-xl">{{ freeWorkoutVideosCount }}+</p>
+        <p class="font-bold text-xl md:text-2xl">
+          {{ freeWorkoutVideosCount }}+
+        </p>
 
-        <p class="text-sm opacity-70">Free Workout Videos</p>
+        <p class="text-sm md:text-lg opacity-70">Free Workout Videos</p>
       </motion.div>
     </div>
 
     <!-- FEATURED IN -->
-    <div class="mt-10 w-full flex flex-col gap-4 self-start py-2 px-3">
+    <div class="mt-10 w-full flex flex-col gap-4 self-start py-2">
       <p class="uppercase tracking-wide opacity-65 text-sm font-semibold">
         As Featured In
       </p>
@@ -149,7 +153,7 @@ const variants = {
           animate="show"
           :custom="index"
           alt="logo image"
-          class="h-10 w-10 object-contain"
+          class="h-10 w-10 md:h-14 md:w-14 object-contain"
         />
       </span>
     </div>

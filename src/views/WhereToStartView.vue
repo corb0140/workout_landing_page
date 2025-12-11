@@ -22,10 +22,10 @@ const data = [
 </script>
 
 <template>
-  <div class="mt-15 py-2.5 pl-4 flex flex-col gap-4">
-    <h2 class="text-2xl">Not sure where to start?</h2>
+  <div class="mt-15 py-2.5 pl-8 md:pl-15 lg:pl-40 flex flex-col gap-8">
+    <h2 class="text-2xl md:text-4xl lg:text-5xl">Not sure where to start?</h2>
 
-    <p class="opacity-65 text-sm">
+    <p class="opacity-65 text-sm md:text-[16px]">
       Programs offer day-to-day guidance on an interactive calendar to keep you
       on track.
     </p>

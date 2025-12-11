@@ -21,10 +21,14 @@
     @apply m-0 flex min-h-screen tracking-wide text-[16px] font-inter bg-black text-off-white;
   }
 
+  p {
+    @apply tracking-wide;
+  }
+
   h1,
   h2,
   h3 {
-    @apply text-4xl font-bold;
+    @apply font-bold;
   }
 
   button {

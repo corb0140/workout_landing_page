@@ -36,27 +36,27 @@ const membershipInfo = [
 </script>
 
 <template>
-  <div class="p-4 mt-15">
-    <h2 class="text-2xl">Membership</h2>
+  <div class="p-8 md:px-15 lg:px-40 mt-15">
+    <h2 class="text-2xl md:text-4xl lg:text-5xl">Membership</h2>
     <div class="w-full border-b opacity-65 mt-4"></div>
 
-    <div class="flex flex-col gap-4 mt-10">
+    <div class="flex flex-col lg:flex-row gap-10 mt-10">
       <div
         v-for="(data, index) in membershipInfo"
         :key="index"
-        class="bg-dark-slate-blue rounded-md p-10 flex flex-col gap-4"
+        class="bg-dark-slate-blue rounded-md p-10 md:px-20 flex flex-col gap-4 lg:grow"
       >
-        <h3 class="text-3xl">{{ data.title }}</h3>
-        <p>{{ data.description }}</p>
+        <h3 class="text-3xl lg:text-4xl">{{ data.title }}</h3>
+        <p class="lg:max-w-100">{{ data.description }}</p>
 
-        <ul class="flex flex-col px-4">
+        <ul class="flex flex-col gap-2 px-4 lg:text-sm mb-10 lg:mt-5">
           <li v-for="(bulletin, index) in data.bulletins" :key="index">
             {{ bulletin }}
           </li>
         </ul>
 
         <div
-          class="text-[16px] flex items-center gap-2"
+          class="md:text-lg lg:text-sm flex items-center gap-2 mt-auto"
           :class="
             index === 0
               ? 'text-orange'

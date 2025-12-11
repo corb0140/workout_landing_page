@@ -32,12 +32,14 @@ window.addEventListener("scroll", () => {
 </script>
 
 <template>
-  <div class="w-screen relative pb-15">
+  <div
+    class="relative pb-15 flex flex-col w-full max-w-screen overflow-x-hidden"
+  >
     <Header :open="() => (showModal = true)" />
 
     <NavModal v-if="showModal" :close="closeModal" />
 
-    <main>
+    <main class="flex flex-col">
       <HeroView />
 
       <motion.div
@@ -91,11 +93,10 @@ window.addEventListener("scroll", () => {
 
     <button
       @click="backToTop"
-      class="fixed bottom-4 right-5 p-2.5 rounded-md bg-orange items-center flex gap-1"
+      class="fixed bottom-4 right-5 p-2.5 rounded-md bg-orange items-center flex gap-2"
       :class="scrollY > 768 ? 'block' : 'hidden'"
     >
-      Back to Top
-      <span class="pi pi-chevron-right" />
+      <span class="pi pi-chevron-up" />
     </button>
   </div>
 </template>

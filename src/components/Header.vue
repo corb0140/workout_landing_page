@@ -4,12 +4,21 @@ const menubars = [1, 2, 3];
 defineProps({
   open: Function,
 });
+
+const links = [
+  "Workouts",
+  "Programs",
+  "Healthy Living",
+  "Community",
+  "About",
+  "Store",
+];
 </script>
 
 <template>
   <div
     id="nav"
-    class="h-10 w-full py-6 px-5 flex justify-between items-center bg-black relative z-20"
+    class="h-10 py-6 lg:py-8 px-5 flex justify-between items-center bg-black relative z-20"
   >
     <h1 class="uppercase text-lg">Workout</h1>
 
@@ -26,13 +35,14 @@ defineProps({
       ></div>
     </div>
 
-    <ul class="hidden">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul class="hidden lg:flex gap-6 items-center">
+      <li
+        class="uppercase list-none text-sm"
+        v-for="(link, index) in links"
+        :key="index"
+      >
+        {{ link }}
+      </li>
     </ul>
   </div>
 </template>
