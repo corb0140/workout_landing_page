@@ -21,16 +21,20 @@
     @apply m-0 flex min-h-screen tracking-wide text-[16px] font-inter bg-black text-off-white;
   }
 
-  h1 {
+  h1,
+  h2,
+  h3 {
     @apply text-4xl font-bold;
   }
 
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  button {
+    outline: none;
+    background-color: transparent;
+    border: none;
   }
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+
+  li {
+    list-style: circle;
   }
 }
 
@@ -41,4 +45,11 @@
 }
 
 @layer utility {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
