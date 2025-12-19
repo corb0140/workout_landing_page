@@ -78,7 +78,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(0)"
         :custom="0"
-        class="flex flex-col gap-1 py-2 px-6 md:py-4 md:px-8 rounded-xl bg-[#EF8964] absolute top-0 right-3 md:right-30 min-w-30 md:min-w-40"
+        class="flex flex-col gap-1 py-2 px-6 md:py-4 md:px-8 rounded-xl bg-[#EF8964] absolute top-0 right-[5%] md:right-[15%] min-w-30 md:min-w-40"
       >
         <span
           class="h-6.5 w-6.5 md:h-7.5 md:w-7.5 rounded-full bg-off-white/40 p-1.5 md:p-2"
@@ -103,7 +103,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(1)"
         :custom="1"
-        class="absolute top-1/2 left-2 md:left-10 rounded-xl bg-gray py-3 md:py-7 pl-2 md:px-5 flex items-center gap-2 md:gap-4 max-w-30 md:max-w-55"
+        class="absolute top-1/2 left-[1%] md:left-[5%] rounded-xl bg-gray py-3 md:py-7 pl-2 md:px-5 flex items-center gap-2 md:gap-4 max-w-30 md:max-w-55"
       >
         <span class="w-5 md:w-7">
           <img
@@ -127,7 +127,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(2)"
         :custom="2"
-        class="absolute bottom-10 right-0 md:right-10 bg-[#7A29DC] pl-2 md:px-5 py-3 md:py-7 rounded-xl flex flex-col gap-2 max-w-30 md:max-w-60"
+        class="absolute bottom-[5%] right-0 md:right-[5%] bg-[#7A29DC] pl-2 md:px-5 py-3 md:py-7 rounded-xl flex flex-col gap-2 max-w-30 md:max-w-60"
       >
         <p class="font-bold text-xl md:text-2xl">
           {{ freeWorkoutVideosCount }}+

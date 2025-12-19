@@ -66,7 +66,7 @@ const variants = {
     </div>
 
     <!-- HERO IMAGE & DATA -->
-    <div class="mt-5 h-150 -right-41 w-full absolute p-5">
+    <div class="mt-5 h-150 -right-[13%] w-full absolute p-5">
       <img
         src="../../assets/images/hero-image.png"
         alt="image of man tying laces"
@@ -80,7 +80,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(0)"
         :custom="0"
-        class="flex flex-col gap-1 py-4 px-8 rounded-xl bg-[#EF8964] absolute top-0 left-210 min-w-40"
+        class="flex flex-col gap-1 py-4 px-8 rounded-xl bg-[#EF8964] absolute top-[5%] left-[58%] min-w-40"
       >
         <span class="h-7.5 w-7.5 rounded-full bg-off-white/40 p-2">
           <img
@@ -103,7 +103,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(1)"
         :custom="1"
-        class="absolute top-[60%] left-110 rounded-xl bg-gray py-7 pl-2 px-5 flex items-center gap-4 max-w-55"
+        class="absolute top-[60%] left-[30%] rounded-xl bg-gray py-7 pl-2 px-5 flex items-center gap-4 max-w-55"
       >
         <span class="w-5 md:w-7">
           <img
@@ -127,7 +127,7 @@ const variants = {
         animate="show"
         @animationComplete="startCount(2)"
         :custom="2"
-        class="absolute bottom-10 right-100 bg-[#7A29DC] px-5 py-7 rounded-xl flex flex-col gap-2 max-w-60"
+        class="absolute bottom-[5%] right-[27%] bg-[#7A29DC] px-5 py-7 rounded-xl flex flex-col gap-2 max-w-60"
       >
         <p class="font-bold text-2xl">{{ freeWorkoutVideosCount }}+</p>
 
